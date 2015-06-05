@@ -41,4 +41,13 @@ describe('String', function() {
 		should(model.name.length <= 200 && model.name.length >= 190).eql(true);
 	});
 
+	it('should be able to generate a guid', function() {
+		var schema = Joi.object({
+			name: Joi.string().guid()
+		});
+		var model = generate(schema);
+		model.should.have.properties(['name']);
+		model.name.should.match(/-/);
+	});
+
 });
