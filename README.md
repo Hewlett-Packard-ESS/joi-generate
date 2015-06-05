@@ -1,4 +1,4 @@
-# joi-generate [![Build Status](https://secure.travis-ci.org/docker/joi-generate.png?branch=master)](http://travis-ci.org/docker/joi-generate) [![Coverage Status](https://coveralls.io/repos/docker/joi-generate/badge.png?branch=master)](https://coveralls.io/r/docker/joi-generate?branch=master) [![Dependency Status](https://david-dm.org/docker/joi-generate.svg)](https://david-dm.org/docker/joi-generate)
+# joi-generate
 
 Generates sample data from Joi schema.
 
