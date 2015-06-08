@@ -4,6 +4,31 @@ Generates sample data from Joi schema.
 
 __NOTE__: This is absolutely not a complete or really working solution, i'm just implementing bits and bobs as I require them.  Feel free to contribute handlers for other types.
 
+Currently implemented:
+```
+  Array
+    ✓ should generate an array
+    ✓ should handle arrays with multiple objects
+
+  Number
+    ✓ should generate a random number
+    ✓ should be able to specify a minimum length
+    ✓ should be able to specify a maximum length
+    ✓ should be able to specify a minimum and maximum length
+
+  Object
+    ✓ should generate an object
+
+  String
+    ✓ should generate a random string
+    ✓ strings should be able to specify a minimum length
+    ✓ strings should be able to specify a maximum length
+    ✓ strings should be able to specify a minimum and maximum length
+    ✓ should be able to generate a guid
+    ✓ should be able to generate an ip
+    ✓ should be able to generate a hostname
+```
+
 ## Getting Started
 Install the module with: `npm install joi-generate`
 

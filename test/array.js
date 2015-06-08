@@ -5,16 +5,23 @@ require('should');
 
 describe('Array', function() {
 
-	it('should generate an array', function(done) {
-		var schema = Joi.object({
-			items: Joi.array().required().items(Joi.object({
-				name: Joi.string()	
-			}))
-		});
+	var go = function(schema, done) {
 		generate(schema, function(err, model) {
+			if (err) {
+				return done(err);
+			}
 			var error = Joi.validate(model, schema);
 			done(error.error);
 		});
+	};
+
+	it('should generate an array', function(done) {
+		var schema = Joi.object({
+			items: Joi.array().required().items(Joi.object({
+				name: Joi.string()
+			}))
+		});
+		go(schema, done);
 	});
 
 	it('should handle arrays with multiple objects', function(done) {
@@ -25,10 +32,7 @@ describe('Array', function() {
 				domain: Joi.string().ip()
 			}))
 		});
-		generate(schema, function(err, model) {
-			var error = Joi.validate(model, schema);
-			done(error.error);
-		});
+		go(schema, done);
 	});
 
 });

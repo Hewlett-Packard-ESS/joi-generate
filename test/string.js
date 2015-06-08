@@ -6,6 +6,9 @@ describe('String', function() {
 
 	var go = function(schema, done) {
 		generate(schema, function(err, model) {
+			if(err) {
+				return done(err);
+			}
 			var error = Joi.validate(model, schema);
 			done(error.error);
 		});

@@ -8,6 +8,10 @@ describe('Object', function() {
 	it('should generate an object', function(done) {
 		var schema = Joi.object({});
 		generate(schema, function(err, model) {
+			if (err) {
+				return done(err);
+			}
+
 			var error = Joi.validate(model, schema);
 			done(error.error);
 		});
