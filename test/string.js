@@ -44,7 +44,6 @@ describe('String', function() {
 		});
 		generate(schema, function(err, model) {
 			model.should.have.properties(['name']);
-			console.log(model.name.length);
 			should(model.name.length <= 200 && model.name.length >= 190).eql(true);
 			done();
 		});
@@ -56,7 +55,18 @@ describe('String', function() {
 		});
 		generate(schema, function(err, model) {
 			model.should.have.properties(['name']);
-			model.name.should.match(/-/);
+			model.name.should.match(/^(\{{0,1}([0-9a-fA-F]){8}-([0-9a-fA-F]){4}-([0-9a-fA-F]){4}-([0-9a-fA-F]){4}-([0-9a-fA-F]){12}\}{0,1})$/);
+			done();
+		});
+	});
+
+	it('should be able to generate an ip', function(done) {
+		var schema = Joi.object({
+			name: Joi.string().ip()
+		});
+		generate(schema, function(err, model) {
+			model.should.have.properties(['name']);
+			model.name.should.match(/^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/);
 			done();
 		});
 	});
