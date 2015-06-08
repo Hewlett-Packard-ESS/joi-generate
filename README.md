@@ -15,10 +15,11 @@ var schema = Joi.object({
 	details: Joi.string().min(100).max(200)
 });
 
-var model = generate(schema);
-/*
- * model = { details: 'some random string between 100 and 200 chars' }
- */
+generate(schema, function(err, model) {
+  /*
+   * model = { details: 'some random string between 100 and 200 chars' }
+   */
+});
 ```
 
 ## Contributing

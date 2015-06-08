@@ -5,10 +5,12 @@ require('should');
 
 describe('Object', function() {
 
-	it('should generate an object', function() {
+	it('should generate an object', function(done) {
 		var schema = Joi.object({});
-		var model = generate(schema);
-		model.should.eql({});
+		generate(schema, function(err, model) {
+			model.should.eql({});
+			done();
+		});
 	});
 
 });
