@@ -29,5 +29,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 _(Nothing yet)_
 
 ## License
-Copyright (c) 2015 Karl Stoney  
+Copyright (c) 2015 Hewlett-Packard. 
 Licensed under the MIT license.
