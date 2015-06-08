@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/node/bin/npm', 'publish' ]
+2 info using npm@2.11.0
+3 info using node@v0.12.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/storage/github.com/Hewlett-Packard-ESS/joi-generate',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/docker/.npm/joi-generate/0.1.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/home/docker/.npm/joi-generate/0.1.0/package.tgz',
+9 verbose tar pack   '/storage/github.com/Hewlett-Packard-ESS/joi-generate' ]
+10 verbose tarball /home/docker/.npm/joi-generate/0.1.0/package.tgz
+11 verbose folder /storage/github.com/Hewlett-Packard-ESS/joi-generate
+12 info prepublish joi-generate@0.1.0
+13 verbose addLocalTarball adding from inside cache /home/docker/.npm/joi-generate/0.1.0/package.tgz
+14 silly cache afterAdd joi-generate@0.1.0
+15 verbose afterAdd /home/docker/.npm/joi-generate/0.1.0/package/package.json not in flight; writing
+16 verbose afterAdd /home/docker/.npm/joi-generate/0.1.0/package/package.json written
+17 silly publish { name: 'joi-generate',
+17 silly publish   description: 'Generates sample data from Joi schema',
+17 silly publish   version: '0.1.0',
+17 silly publish   homepage: 'https://github.com/Stono/joi-generate',
+17 silly publish   author: { name: 'Karl Stoney', email: 'karl@jambr.co.uk' },
+17 silly publish   repository: { type: 'git', url: 'git://github.com/Stono/joi-generate.git' },
+17 silly publish   bugs: { url: 'https://github.com/Stono/joi-generate/issues' },
+17 silly publish   licenses:
+17 silly publish    [ { type: 'MIT',
+17 silly publish        url: 'https://github.com/Stono/joi-generate/blob/master/LICENSE-MIT' } ],
+17 silly publish   main: 'index.js',
+17 silly publish   engines: { node: '>= 0.8.0' },
+17 silly publish   scripts: { test: 'grunt mochaTest' },
+17 silly publish   devDependencies:
+17 silly publish    { coveralls: '~2.11.2',
+17 silly publish      grunt: '^0.4.5',
+17 silly publish      'grunt-contrib-jshint': '^0.11.2',
+17 silly publish      'grunt-contrib-watch': '^0.6.1',
+17 silly publish      'grunt-mocha-istanbul': '^2.4.0',
+17 silly publish      'grunt-mocha-test': '^0.12.7',
+17 silly publish      'grunt-notify': '0.4.1',
+17 silly publish      istanbul: '^0.3.14',
+17 silly publish      joi: '^6.4.3',
+17 silly publish      mocha: '^2.2.5',
+17 silly publish      'mocha-jenkins-reporter': '^0.1.8',
+17 silly publish      should: '^6.0.3' },
+17 silly publish   keywords: [],
+17 silly publish   dependencies:
+17 silly publish    { async: '^1.2.1',
+17 silly publish      chance: '^0.7.5',
+17 silly publish      debug: '^2.2.0',
+17 silly publish      'lib-onion': '^0.1.1',
+17 silly publish      lodash: '^3.9.3' },
+17 silly publish   readme: '# joi-generate\n\nGenerates sample data from Joi schema.\n\n__NOTE__: This is absolutely not a complete or really working solution, i\'m just implementing bits and bobs as I require them.  Feel free to contribute handlers for other types.\n\nCurrently implemented:\n```\n  Array\n    ✓ should generate an array\n    ✓ should handle arrays with multiple objects\n\n  Number\n    ✓ should generate a random number\n    ✓ should be able to specify a minimum length\n    ✓ should be able to specify a maximum length\n    ✓ should be able to specify a minimum and maximum length\n\n  Object\n    ✓ should generate an object\n\n  String\n    ✓ should generate a random string\n    ✓ strings should be able to specify a minimum length\n    ✓ strings should be able to specify a maximum length\n    ✓ strings should be able to specify a minimum and maximum length\n    ✓ should be able to generate a guid\n    ✓ should be able to generate an ip\n    ✓ should be able to generate a hostname\n```\n\n## Getting Started\nInstall the module with: `npm install joi-generate`\n\n```javascript\nvar Joi = require(\'joi\');\nvar generate = new require(\'joi-generate\').Generate();\n\nvar schema = Joi.object({\n\tdetails: Joi.string().min(100).max(200)\n});\n\ngenerate(schema, function(err, model) {\n  /*\n   * model = { details: \'some random string between 100 and 200 chars\' }\n   */\n});\n```\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\n\n## Release History\n_(Nothing yet)_\n\n## License\nCopyright (c) 2015 Hewlett-Packard. \nLicensed under the MIT license.\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '811c7ae57f336b0adc46016c06326aea1f79b162',
+17 silly publish   _id: 'joi-generate@0.1.0',
+17 silly publish   _shasum: '4f53d5306f4d56fedc08463a67ebb8dd43704488',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name joi-generate
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry http://esscontrol-npm/
+22 silly mapToRegistry uri http://esscontrol-npm/joi-generate
+23 verbose publish registryBase http://esscontrol-npm/
+24 silly publish uploading /home/docker/.npm/joi-generate/0.1.0/package.tgz
+25 verbose stack Error: auth required for publishing
+25 verbose stack     at CachingRegistryClient.publish (/usr/local/node/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+25 verbose stack     at /usr/local/node/lib/node_modules/npm/lib/publish.js:134:14
+25 verbose stack     at mapToRegistry (/usr/local/node/lib/node_modules/npm/lib/utils/map-to-registry.js:55:3)
+25 verbose stack     at publish_ (/usr/local/node/lib/node_modules/npm/lib/publish.js:104:3)
+25 verbose stack     at Array.<anonymous> (/usr/local/node/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+25 verbose stack     at LOOP (/usr/local/node/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+25 verbose stack     at LOOP (/usr/local/node/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+25 verbose stack     at chain (/usr/local/node/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+25 verbose stack     at /usr/local/node/lib/node_modules/npm/lib/publish.js:73:5
+25 verbose stack     at RES (/usr/local/node/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+26 verbose cwd /storage/github.com/Hewlett-Packard-ESS/joi-generate
+27 error Linux 3.10.0-123.20.1.el7.x86_64
+28 error argv "node" "/usr/local/node/bin/npm" "publish"
+29 error node v0.12.4
+30 error npm  v2.11.0
+31 error code ENEEDAUTH
+32 error need auth auth required for publishing
+32 error need auth You need to authorize this machine using `npm adduser`
+33 verbose exit [ 1, true ]
