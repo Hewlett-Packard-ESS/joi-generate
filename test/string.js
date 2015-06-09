@@ -42,6 +42,13 @@ describe('String', function() {
 		go(schema, done);
 	});
 
+	it('should be able to generate an email', function(done) {
+		var schema = Joi.object({
+			name: Joi.string().email()
+		});
+		go(schema, done);
+	});
+
 	it('should be able to generate a guid', function(done) {
 		var schema = Joi.object({
 			name: Joi.string().guid()
