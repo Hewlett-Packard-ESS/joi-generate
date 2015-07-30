@@ -10,6 +10,12 @@ Currently implemented:
     ✓ should generate an array
     ✓ should handle arrays with multiple objects
 
+  Boolean
+    ✓ should generate a boolean value
+
+  Date
+    ✓ should generate a boolean value
+
   Number
     ✓ should generate a random number
     ✓ should be able to specify a minimum length
@@ -24,9 +30,11 @@ Currently implemented:
     ✓ strings should be able to specify a minimum length
     ✓ strings should be able to specify a maximum length
     ✓ strings should be able to specify a minimum and maximum length
+    ✓ should be able to generate an email
     ✓ should be able to generate a guid
     ✓ should be able to generate an ip
     ✓ should be able to generate a hostname
+
 ```
 
 ## Getting Started
@@ -53,6 +61,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 ## Release History
 0.1.0 Initial Release
 0.1.1 Added bool and email
+0.1.2 Added basic date
 
 ## License
 Copyright (c) 2015 Hewlett-Packard. 
