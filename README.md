@@ -14,7 +14,7 @@ Currently implemented:
     ✓ should generate a boolean value
 
   Date
-    ✓ should generate a boolean value
+    ✓ should generate a date value
 
   Number
     ✓ should generate a random number
