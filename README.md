@@ -65,6 +65,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 * 0.1.0 Initial Release
 * 0.1.1 Added bool and email
 * 0.1.2 Added basic date
+* 0.1.3 Added date format support
 
 ## License
 Copyright (c) 2015 Hewlett-Packard. 
