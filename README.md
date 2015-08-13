@@ -15,6 +15,8 @@ Currently implemented:
 
   Date
     ✓ should generate a date value
+    ✓ should handle custom date formats
+    ✓ should handle custom iso formats
 
   Number
     ✓ should generate a random number
