@@ -62,11 +62,12 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
-* 0.1.0 Initial Release
-* 0.1.1 Added bool and email
-* 0.1.2 Added basic date
-* 0.1.3 Version bump for 0.1.2
+* 0.1.5 Fixed bug in string handler
 * 0.1.4 Added date format support
+* 0.1.3 Version bump for 0.1.2
+* 0.1.2 Added basic date
+* 0.1.1 Added bool and email
+* 0.1.0 Initial Release
 
 ## License
 Copyright (c) 2015 Hewlett-Packard. 
