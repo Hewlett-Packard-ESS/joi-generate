@@ -69,4 +69,11 @@ describe('String', function() {
 		});
 		go(schema, done);
 	});
+
+  it('should be able to generate a regex', function(done) {
+    var schema = Joi.object({
+      name: Joi.string().regex(/[A-Z]{3}/)
+    });
+    go(schema, done);
+  });
 });
