@@ -1,5 +1,6 @@
 'use strict';
 var Joi = require('joi');
+var async = require('async');
 var generate = new require('../').Generate();
 require('should');
 
@@ -11,6 +12,7 @@ describe('Array', function() {
 				return done(err);
 			}
 			var error = Joi.validate(model, schema);
+			console.log('model', model);
 			done(error.error);
 		});
 	};
@@ -33,6 +35,17 @@ describe('Array', function() {
 			}))
 		});
 		go(schema, done);
+	});
+	
+	it('should populate an array with matching items', function(done) {
+		var types = [Joi.string(), Joi.boolean(), Joi.number(), Joi.date()];
+		
+		async.each(types, function(type, callback) {
+			var schema = Joi.array().required().items(type);
+
+			go(schema, callback);
+		}, done)
+		
 	});
 
 });
