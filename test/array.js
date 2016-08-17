@@ -12,7 +12,6 @@ describe('Array', function() {
 				return done(err);
 			}
 			var error = Joi.validate(model, schema);
-			console.log('model', model);
 			done(error.error);
 		});
 	};
