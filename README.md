@@ -37,6 +37,11 @@ Currently implemented:
     ✓ should be able to generate an ip
     ✓ should be able to generate a hostname
 
+  Binary
+    ✓ should generate a binary buffer
+    ✓ should be able to specify a minimum length
+    ✓ should be able to specify a maximum length
+    ✓ should be able to specify a length
 ```
 
 ## Getting Started
