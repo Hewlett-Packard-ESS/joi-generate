@@ -7,5 +7,4 @@ node_js:
 before_script:
   - npm install -g grunt-cli
 script:
-  - "grunt jshint"
-  - "grunt shell:coverage"
+  - "grunt jenkins"
