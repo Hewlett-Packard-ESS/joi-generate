@@ -1,4 +1,4 @@
-# joi-generate
+# joi-generate [![Build Status](https://travis-ci.org/Hewlett-Packard-ESS/joi-generate.svg?branch=develop)](https://travis-ci.org/Hewlett-Packard-ESS/joi-generate)
 
 Generates sample data from Joi schema.
 

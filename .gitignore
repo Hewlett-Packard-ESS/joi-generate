@@ -1,4 +1,9 @@
 node_modules
 coverage/
+reports/
 *.tgz
 *.swp
+# Ignore vim temp files
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+

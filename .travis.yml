@@ -1,8 +1,10 @@
 language: node_js
 node_js:
-  - '0.10'
+  - '6'
+  - '5'
+  - '4'
+  - '0.12'
 before_script:
   - npm install -g grunt-cli
 script:
-  - "grunt jshint"
-  - "grunt shell:coverage"
+  - "grunt jenkins"
