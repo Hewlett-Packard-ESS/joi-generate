@@ -41,4 +41,19 @@ describe('Number', function() {
 		});
 		go(schema, done);
 	});
+
+  it('should be able to specify a positive', function(done) {
+    var schema = Joi.object({
+      name: Joi.number().positive()
+    });
+    go(schema, done);
+  });
+
+  it('should be able to specify a negative', function(done) {
+    var schema = Joi.object({
+      name: Joi.number().negative()
+    });
+    go(schema, done);
+  });
+
 });

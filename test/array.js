@@ -35,4 +35,30 @@ describe('Array', function() {
 		go(schema, done);
 	});
 
+  it('should handle arrays with min objects', function(done) {
+    var schema = Joi.object({
+      items: Joi.array().required().items(Joi.object({
+        name: Joi.string()
+      })).min(3)
+    });
+    go(schema, done);
+  });
+
+  it('should handle arrays with max objects', function(done) {
+    var schema = Joi.object({
+      items: Joi.array().required().items(Joi.object({
+        name: Joi.string()
+      })).max(3)
+    });
+    go(schema, done);
+  });
+
+    it('should handle arrays with min and max objects', function(done) {
+    var schema = Joi.object({
+      items: Joi.array().required().items(Joi.object({
+        name: Joi.string()
+      })).min(2).max(2)
+    });
+    go(schema, done);
+  });
 });
