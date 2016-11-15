@@ -2,7 +2,7 @@
   "name": "joi-generate",
   "description": "Generates sample data from Joi schema",
   "version": "0.1.5",
-  "homepage": "https://github.com/danlock/joi-generate",
+  "homepage": "https://github.com/Hewlett-Packard-ESS/joi-generate",
   "author": {
     "name": "Karl Stoney",
     "email": "karl@jambr.co.uk"
@@ -12,15 +12,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/danlock/joi-generate.git"
+    "url": "git://github.com/Hewlett-Packard-ESS/joi-generate.git"
   },
   "bugs": {
-    "url": "https://github.com/danlock/joi-generate/issues"
+    "url": "https://github.com/Hewlett-Packard-ESS/joi-generate/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/danlock/joi-generate/blob/master/LICENSE-MIT"
+      "url": "https://github.com/Hewlett-Packard-ESS/joi-generate/blob/master/LICENSE-MIT"
     }
   ],
   "main": "index.js",
