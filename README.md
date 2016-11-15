@@ -6,37 +6,45 @@ __NOTE__: This is absolutely not a complete or really working solution, i'm just
 
 Currently implemented:
 ```
-  Array
-    ✓ should generate an array
-    ✓ should handle arrays with multiple objects
+	Array
+		✓ should generate an array
+		✓ should handle arrays with multiple objects
 
-  Boolean
-    ✓ should generate a boolean value
+	Boolean
+		✓ should generate a boolean value
 
-  Date
-    ✓ should generate a date value
-    ✓ should handle custom date formats
-    ✓ should handle custom iso formats
+	Date
+		✓ should generate a date value
+		✓ should handle custom date formats
+		✓ should handle custom iso formats
 
-  Number
-    ✓ should generate a random number
-    ✓ should be able to specify a minimum length
-    ✓ should be able to specify a maximum length
-    ✓ should be able to specify a minimum and maximum length
+	Number
+		✓ should generate a random number
+		✓ should be able to specify a minimum length
+		✓ should be able to specify a maximum length
+		✓ should be able to specify a minimum and maximum length
 
-  Object
-    ✓ should generate an object
+	Object
+		✓ should generate an object
 
-  String
-    ✓ should generate a random string
-    ✓ strings should be able to specify a minimum length
-    ✓ strings should be able to specify a maximum length
-    ✓ strings should be able to specify a minimum and maximum length
-    ✓ should be able to generate an email
-    ✓ should be able to generate a guid
-    ✓ should be able to generate an ip
-    ✓ should be able to generate a hostname
+	Any
+	✓ should generate an empty object
 
+	String
+		✓ should generate a random string
+		✓ strings should be able to specify a minimum length
+		✓ strings should be able to specify a maximum length
+		✓ strings should be able to specify a minimum and maximum length
+		✓ should be able to generate an email
+		✓ should be able to generate a guid
+		✓ should be able to generate an ip
+		✓ should be able to generate a hostname
+
+	Binary
+		✓ should generate a binary buffer
+		✓ should be able to specify a minimum length
+		✓ should be able to specify a maximum length
+		✓ should be able to specify a length
 ```
 
 ## Getting Started
@@ -51,9 +59,9 @@ var schema = Joi.object({
 });
 
 generate(schema, function(err, model) {
-  /*
-   * model = { details: 'some random string between 100 and 200 chars' }
-   */
+	/*
+	 * model = { details: 'some random string between 100 and 200 chars' }
+	 */
 });
 ```
 
