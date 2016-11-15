@@ -7,11 +7,6 @@
     "name": "Karl Stoney",
     "email": "karl@jambr.co.uk"
   },
-  "contributors": [
-    "Daniel Lockhart",
-    "Trystan Johnson",
-    "Ricky Tam"
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/Hewlett-Packard-ESS/joi-generate.git"
@@ -56,5 +51,27 @@
     "moment": "^2.10.6",
     "node-uuid": "^1.4.7",
     "randexp": "^0.4.2"
-  }
+  },
+  "contributors": [
+    {
+      "name": "jamlen",
+      "email": null,
+      "url": "https://github.com/jamlen"
+    },
+    {
+      "name": "Ricky Tam",
+      "email": null,
+      "url": "https://github.com/powpowricky"
+    },
+    {
+      "name": "Trystan Johnson",
+      "email": null,
+      "url": "https://github.com/trystanj"
+    },
+    {
+      "name": "Daniel Lockhart",
+      "email": null,
+      "url": "https://github.com/Danlock"
+    },
+  ]
 }
