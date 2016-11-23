@@ -49,8 +49,8 @@
     "lib-onion": "^0.1.1",
     "lodash": "^3.9.3",
     "moment": "^2.10.6",
-    "node-uuid": "^1.4.7",
-    "randexp": "^0.4.2"
+    "randexp": "^0.4.2",
+    "uuid": "^3.0.0"
   },
   "contributors": [
     {
