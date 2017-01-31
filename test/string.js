@@ -84,9 +84,16 @@ describe('String', function() {
         go(schema, done);
     });
 
-    it('should be able to generate an lowercase string', function(done) {
+    it('should be able to generate a lowercase string', function(done) {
         var schema = Joi.object({
             name: Joi.string().lowercase().options({ convert: false })
+        });
+        go(schema, done);
+    });
+    
+    it('should be able to generate an string from allowed options', function(done) {
+        var schema = Joi.object({
+            choice: Joi.string().valid('first', 'second', 'third')
         });
         go(schema, done);
     });
