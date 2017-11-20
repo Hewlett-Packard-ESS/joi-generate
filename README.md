@@ -15,7 +15,6 @@ Currently implemented:
 
 	Date
 		✓ should generate a date value
-		✓ should handle custom date formats
 		✓ should handle custom iso formats
 
 	Number
@@ -28,7 +27,7 @@ Currently implemented:
 		✓ should generate an object
 
 	Any
-	✓ should generate an empty object
+		✓ should generate an empty object
 
 	String
 		✓ should generate a random string

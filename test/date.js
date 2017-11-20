@@ -21,13 +21,6 @@ describe('Date', function() {
         go(schema, done);
     });
 
-    it('should handle custom date formats', function(done) {
-        var schema = Joi.object({
-            name: Joi.date().format('DD MMM YYYY HH:mm:ss Z')
-        });
-        go(schema, done);
-    });
-
     it('should handle custom iso formats', function(done) {
         var schema = Joi.object({
             name: Joi.date().iso()
