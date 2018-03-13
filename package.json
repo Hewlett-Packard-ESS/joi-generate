@@ -1,7 +1,7 @@
 {
   "name": "joi-generate",
   "description": "Generates sample data from Joi schema",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "homepage": "https://github.com/Hewlett-Packard-ESS/joi-generate",
   "author": {
     "name": "Karl Stoney",
@@ -49,8 +49,8 @@
     "lib-onion": "^0.1.1",
     "lodash": "^3.9.3",
     "moment": "^2.10.6",
-    "node-uuid": "^1.4.7",
-    "randexp": "^0.4.2"
+    "randexp": "0.4.6",
+    "uuid": "^3.0.0"
   },
   "contributors": [
     {
